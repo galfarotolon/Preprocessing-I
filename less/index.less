@@ -185,6 +185,7 @@ nav {
 @media(max-width: 500px){
 	flex-direction: column-reverse;
 	text-align: center;
+	padding: 5%;
 }
 
 
@@ -206,13 +207,27 @@ nav {
 		
 		border-right: 1px dotted @headerColor;
 		width: 49%;
-		
+
+		@media(max-width: 500px){
+
+			justify-content: center;
+			width: 100%;
+			border-bottom: 1px dotted @headerColor;
+			border-right: none;
+			}
 
 	}
 
 .items-right{
 	
 	width: 49%;
+
+	@media(max-width: 500px){
+
+		justify-content: center;
+		width: 100%;
+		
+		}
 
 }
 
@@ -228,19 +243,40 @@ nav {
 
 	ul{
 		list-style-type: circle;
+		
 	}
 
 	li{
 		margin-left: 10%;
 		margin-bottom: 5%;
+		@media(max-width: 500px){
+
+		
+			width: 100%;
+			}
 	}
+
+@media(max-width: 500px){
+
+justify-content: center;
+}
 
 }
 
 .item-top{
 	border-bottom: 1px dotted @headerColor;
+
+
 }
+
 }
+
+@media(max-width: 500px){
+	flex-direction: column;
+	justify-content: center;
+	
+}
+
 
 
 
